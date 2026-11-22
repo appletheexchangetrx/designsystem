@@ -912,6 +912,172 @@
               ],
               "custom_label_0": "Apple",
               "sale_price_effective_date": null
+            },
+            {
+              "item_group_id": "APPLE-IPHONE-18-PRO-MAX",
+              "title": "Apple iPhone 18 Pro Max",
+              "description": null,
+              "brand": "Apple",
+              "gtin": null,
+              "mpn": null,
+              "availability": "in stock",
+              "condition": "new",
+              "quantity_to_sell_on_facebook": 50,
+              "expiration_date": null,
+              "link": "https://www.apple.com/my/shop/buy-iphone/iphone-18-pro",
+              "google_product_category": "Electronics > Communications > Telephony > Mobile Phones",
+              "product_type": "Apple iPhone",
+              "created_at": "2026-11-21T09:55:58.461011+00:00",
+              "updated_at": "2026-11-21T10:25:46.95+00:00",
+              "rich_text_description": null,
+              "variants": [
+                {
+                  "id": "5bb40d3f-ba11-493e-a2ea-668113723c9b",
+                  "size": "256GB",
+                  "color": "Black",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "f1b702ae-7209-485a-a780-6aed04470cb9",
+                  "size": "512GB",
+                  "color": "Black",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "d3ec0d14-2883-4ce5-94a8-a6c5f50fde17",
+                  "size": "1TB",
+                  "color": "Black",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "47bf6f71-8c5b-4bd6-b3e5-5bb853f578c5",
+                  "size": "2TB",
+                  "color": "Black",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "765602a5-356b-4dac-b85a-1acb1e89f7ac",
+                  "size": "256GB",
+                  "color": "Silver",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "8cc9b021-77de-455f-9bcf-6b7afd62c58e",
+                  "size": "512GB",
+                  "color": "Silver",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "5f8d3cf4-092f-4cd2-8da3-2e90c2f0f911",
+                  "size": "1TB",
+                  "color": "Silver",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "46b6e5c0-0f6a-46e8-ac7d-f71246137da1",
+                  "size": "2TB",
+                  "color": "Silver",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "8308ff1f-6722-48fe-baf9-04d51be4ce8b",
+                  "size": "256GB",
+                  "color": "Glacier",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "635b5139-b7a5-4d9f-bfba-3ed0455afc07",
+                  "size": "512GB",
+                  "color": "Glacier",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "d486fbdd-d4b4-4cc4-899c-d670a1b4b736",
+                  "size": "1TB",
+                  "color": "Glacier",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "2109f471-dd10-44a3-b949-f398b62b944d",
+                  "size": "2TB",
+                  "color": "Glacier",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "87304ab2-23da-486e-a5a0-7d728bb6299a",
+                  "size": "256GB",
+                  "color": "Burgundy",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "6d8adc71-c192-4a95-b40a-9db1a412a29d",
+                  "size": "512GB",
+                  "color": "Burgundy",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "0f88d574-7dbd-4bdd-aa6f-945fa54d55a2",
+                  "size": "1TB",
+                  "color": "Burgundy",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "fd968a8e-f89b-42ae-b649-1dd72bca56b3",
+                  "size": "2TB",
+                  "color": "Burgundy",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                }
+              ],
+              "custom_label_0": "Apple",
+              "sale_price_effective_date": null
             }
           ]
         },
