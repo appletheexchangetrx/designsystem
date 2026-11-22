@@ -1,10 +1,1109 @@
 {
+  "meta": {
+    "name": "Apple The Exchange TRX",
+    "system": "Apple Storefront Mobile Design System",
+    "version": "1.5.1",
+    "status": "final",
+    "platform": "mobile-only",
+    "framework": "react-web",
+    "language": "en",
+    "locale": "en-MY",
+    "currency": "MYR",
+    "currency_symbol": "RM",
+    "font_family": "Plus Jakarta Sans",
+    "brand": "Apple",
+    "product_policy": "Apple products only"
+  },
+  "brand": {
+    "name": "Apple The Exchange TRX",
+    "manufacturer": "Apple",
+    "catalog_scope": "Apple products and Apple accessories",
+    "visual_direction": "minimal, premium, clean, modern",
+    "design_principles": [
+      "Simplicity",
+      "Clarity",
+      "Consistency",
+      "Premium presentation",
+      "Touch-first interaction"
+    ]
+  },
+  "product_catalog": {
+    "brand": "Apple",
+    "allow_third_party_products": false,
+    "categories": [
+      {
+        "id": "iphone",
+        "name": "iPhone",
+        "icon": "smartphone"
+      },
+      {
+        "id": "mac",
+        "name": "Mac",
+        "icon": "laptop"
+      },
+      {
+        "id": "ipad",
+        "name": "iPad",
+        "icon": "tablet"
+      },
+      {
+        "id": "apple-watch",
+        "name": "Apple Watch",
+        "icon": "watch"
+      },
+      {
+        "id": "airpods",
+        "name": "AirPods",
+        "icon": "headphones"
+      },
+      {
+        "id": "apple-tv-home",
+        "name": "Apple TV & Home",
+        "icon": "tv"
+      },
+      {
+        "id": "accessories",
+        "name": "Accessories",
+        "icon": "cable"
+      }
+    ],
+    "product_fields": [
+      "id",
+      "name",
+      "brand",
+      "category",
+      "description",
+      "price",
+      "original_price",
+      "images",
+      "stock",
+      "specifications",
+      "variants",
+      "is_featured",
+      "is_new",
+      "is_available"
+    ],
+    "product_rules": {
+      "brand": "Apple",
+      "currency": "MYR",
+      "price_format": "RM 0.00",
+      "require_product_image": true,
+      "require_product_name": true,
+      "require_price": true,
+      "quantity_minimum": 1,
+      "quantity_maximum": "product_stock"
+    }
+  },
+  "theme": {
+    "default": "light",
+    "available": [
+      "light",
+      "dark"
+    ],
+    "light": {
+      "colors": {
+        "primary": "#0071E3",
+        "primary_hover": "#0077ED",
+        "background": "#F5F5F7",
+        "surface": "#FFFFFF",
+        "surface_secondary": "#F5F5F7",
+        "text_primary": "#1D1D1F",
+        "text_secondary": "#6E6E73",
+        "text_tertiary": "#86868B",
+        "border": "#D2D2D7",
+        "divider": "#E8E8ED",
+        "success": "#248A3D",
+        "warning": "#B7791F",
+        "danger": "#D70015",
+        "overlay": "rgba(0,0,0,0.45)"
+      }
+    },
+    "dark": {
+      "colors": {
+        "primary": "#2997FF",
+        "primary_hover": "#47A7FF",
+        "background": "#000000",
+        "surface": "#1C1C1E",
+        "surface_secondary": "#2C2C2E",
+        "text_primary": "#F5F5F7",
+        "text_secondary": "#A1A1A6",
+        "text_tertiary": "#86868B",
+        "border": "#38383A",
+        "divider": "#2C2C2E",
+        "success": "#30D158",
+        "warning": "#FFD60A",
+        "danger": "#FF453A",
+        "overlay": "rgba(0,0,0,0.65)"
+      }
+    }
+  },
+  "tokens": {
+    "typography": {
+      "font_family": "Plus Jakarta Sans",
+      "font_weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "sizes": {
+        "display": 32,
+        "heading_1": 28,
+        "heading_2": 24,
+        "heading_3": 20,
+        "heading_4": 18,
+        "body_large": 16,
+        "body": 14,
+        "body_small": 12,
+        "caption": 11
+      },
+      "line_heights": {
+        "tight": 1.2,
+        "normal": 1.5,
+        "relaxed": 1.7
+      }
+    },
+    "spacing": {
+      "0": 0,
+      "1": 4,
+      "2": 8,
+      "3": 12,
+      "4": 16,
+      "5": 20,
+      "6": 24,
+      "7": 28,
+      "8": 32,
+      "9": 36,
+      "10": 40,
+      "12": 48,
+      "14": 56,
+      "16": 64
+    },
+    "radius": {
+      "none": 0,
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "xlarge": 20,
+      "xxlarge": 24,
+      "pill": 999
+    },
+    "shadows": {
+      "none": "none",
+      "small": "0 1px 3px rgba(0,0,0,0.06)",
+      "medium": "0 4px 12px rgba(0,0,0,0.08)",
+      "large": "0 8px 24px rgba(0,0,0,0.12)"
+    },
+    "sizing": {
+      "header_height": 56,
+      "bottom_navigation_height": 64,
+      "bottom_action_height": 72,
+      "button_height": 48,
+      "input_height": 48,
+      "icon_small": 16,
+      "icon_medium": 20,
+      "icon_large": 24,
+      "touch_target_minimum": 44
+    },
+    "motion": {
+      "fast": "150ms",
+      "normal": "250ms",
+      "slow": "350ms",
+      "easing": "ease-in-out"
+    },
+    "z_index": {
+      "base": 0,
+      "sticky": 10,
+      "header": 20,
+      "bottom_navigation": 30,
+      "bottom_action": 40,
+      "dropdown": 50,
+      "overlay": 60,
+      "modal": 70,
+      "bottom_sheet": 80,
+      "toast": 90
+    }
+  },
+  "layout": {
+    "platform": "mobile-only",
+    "max_width": 500,
+    "viewport": {
+      "width": "100%",
+      "height": "100dvh",
+      "overflow": "hidden"
+    },
+    "root": {
+      "height": "100%",
+      "min_height": 0,
+      "display": "flex",
+      "flex_direction": "column",
+      "overflow": "hidden",
+      "width": "100%",
+      "max_width": "500px",
+      "margin": "0 auto"
+    },
+    "app_shell": {
+      "height": "100%",
+      "min_height": 0,
+      "display": "flex",
+      "flex_direction": "column",
+      "overflow": "hidden",
+      "width": "100%",
+      "max_width": "500px",
+      "margin": "0 auto"
+    },
+    "main_content": {
+      "flex": 1,
+      "min_height": 0,
+      "overflow_y": "auto",
+      "overflow_x": "hidden",
+      "overscroll_behavior": "contain"
+    },
+    "page": {
+      "width": "100%",
+      "padding_horizontal": 16,
+      "padding_top": 16,
+      "padding_bottom": 24
+    },
+    "safe_area": {
+      "top": "env(safe-area-inset-top, 0px)",
+      "bottom": "env(safe-area-inset-bottom, 0px)"
+    },
+    "mobile_only_rules": {
+      "desktop_layout": false,
+      "desktop_navigation": false,
+      "center_app_on_desktop": true,
+      "app_width": "100%",
+      "max_width": 500,
+      "desktop_background": "#E8E8ED"
+    }
+  },
+  "app_shell": {
+    "components": [
+      "GlobalHeader",
+      "MainContent",
+      "BottomNavigation"
+    ],
+    "global_header": {
+      "items": [
+        "logo",
+        "notification",
+        "cart",
+        "profile"
+      ],
+      "height": 56,
+      "sticky": false
+    },
+    "main_content": {
+      "flex": 1,
+      "scrollable": true,
+      "min_height": 0
+    },
+    "bottom_navigation": {
+      "height": 64,
+      "sticky": false,
+      "items": [
+        "home",
+        "products",
+        "livechat",
+        "profile"
+      ]
+    }
+  },
+  "components": {
+    "header": {
+      "height": 56,
+      "position": "sticky",
+      "show_logo": true,
+      "show_notification": true,
+      "show_cart": true,
+      "show_profile": true,
+      "cart_badge": true
+    },
+    "bottom_navigation": {
+      "height": 64,
+      "position": "fixed",
+      "items": [
+        {
+          "id": "home",
+          "label": "Home",
+          "icon": "house"
+        },
+        {
+          "id": "products",
+          "label": "Products",
+          "icon": "grid-2x2"
+        },
+        {
+          "id": "livechat",
+          "label": "Live Chat",
+          "icon": "message-circle"
+        },
+        {
+          "id": "profile",
+          "label": "Profile",
+          "icon": "user-round"
+        }
+      ]
+    },
+    "bottom_action": {
+      "height": 72,
+      "position": "sticky",
+      "background": "surface",
+      "safe_area_bottom": true
+    },
+    "button": {
+      "height": 48,
+      "radius": 12,
+      "variants": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost",
+        "danger"
+      ],
+      "sizes": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "full_width_supported": true,
+      "disabled_state": true,
+      "loading_state": true
+    },
+    "input": {
+      "height": 48,
+      "radius": 12,
+      "label": true,
+      "placeholder": true,
+      "error_message": true,
+      "focus_state": true,
+      "disabled_state": true
+    },
+    "card": {
+      "background": "surface",
+      "radius": 16,
+      "padding": 16,
+      "shadow": "small"
+    },
+    "badge": {
+      "radius": "pill",
+      "variants": [
+        "default",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ]
+    },
+    "product_card": {
+      "image_aspect_ratio": "1:1",
+      "image_fit": "contain",
+      "show_name": true,
+      "show_price": true,
+      "show_original_price": true,
+      "show_discount": true,
+      "show_stock": false,
+      "show_add_to_cart": true,
+      "radius": 16,
+      "layout": "vertical",
+      "card_padding": 0,
+      "overflow": "hidden",
+      "image_container": {
+        "width": "100%",
+        "aspect_ratio": "1:1",
+        "padding": 0,
+        "margin": 0,
+        "overflow": "hidden",
+        "background": "surface_secondary",
+        "border_radius": "16px 16px 0 0",
+        "border_top_left_radius": 16,
+        "border_top_right_radius": 16,
+        "border_bottom_left_radius": 0,
+        "border_bottom_right_radius": 0
+      },
+      "image": {
+        "width": "100%",
+        "height": "100%",
+        "display": "block",
+        "object_fit": "contain",
+        "object_position": "center",
+        "padding": 0,
+        "margin": 0
+      },
+      "content": {
+        "padding": 12,
+        "gap": 8
+      },
+      "image_to_content_spacing": 0,
+      "badge_position": "image_overlay",
+      "wishlist_position": "image_overlay"
+    },
+    "modal": {
+      "position": "center",
+      "backdrop": true,
+      "close_on_backdrop": true,
+      "close_button": true
+    },
+    "bottom_sheet": {
+      "position": "bottom",
+      "border_radius": "20px 20px 0 0",
+      "backdrop": true,
+      "drag_handle": true,
+      "safe_area_bottom": true
+    },
+    "profile": {
+      "show_avatar": true,
+      "show_user_name": true,
+      "show_email": true,
+      "menu_items": [
+        "my_account",
+        "my_orders",
+        "my_addresses",
+        "payment_methods",
+        "notifications",
+        "help_center",
+        "about"
+      ]
+    },
+    "cart": {
+      "show_product_image": true,
+      "image_size": 88,
+      "show_product_name": true,
+      "show_variant": true,
+      "show_price": true,
+      "quantity_control": true,
+      "quantity_button_size": 32,
+      "quantity_minimum": 1,
+      "quantity_maximum": "product_stock",
+      "select_all": true,
+      "item_selection": true,
+      "summary": true,
+      "empty_state": true
+    },
+    "checkout": {
+      "sections": [
+        "shipping_address",
+        "order_items",
+        "delivery",
+        "payment_method",
+        "price_summary"
+      ],
+      "shipping_fee": {
+        "type": "fixed",
+        "amount": 52,
+        "currency": "MYR",
+        "display": "RM 52.00",
+        "editable_by_customer": false
+      },
+      "payment": {
+        "status": "undecided",
+        "methods": []
+      },
+      "place_order_button": true,
+      "validation": true
+    },
+    "order_success": {
+      "show_success_icon": true,
+      "show_order_number": true,
+      "show_order_summary": true,
+      "actions": [
+        "view_order",
+        "continue_shopping"
+      ]
+    },
+    "orders": {
+      "tabs": [
+        "all",
+        "pending",
+        "processing",
+        "shipped",
+        "completed",
+        "cancelled"
+      ],
+      "show_order_number": true,
+      "show_order_date": true,
+      "show_product_preview": true,
+      "show_total": true,
+      "show_status": true,
+      "show_view_details": true,
+      "empty_state": true
+    },
+    "order_detail": {
+      "sections": [
+        "order_status",
+        "order_information",
+        "shipping_address",
+        "product_list",
+        "payment_summary"
+      ],
+      "actions": [
+        "contact_support",
+        "cancel_order",
+        "buy_again"
+      ]
+    },
+    "order_tracking": {
+      "timeline": [
+        "order_placed",
+        "processing",
+        "shipped",
+        "out_for_delivery",
+        "delivered"
+      ],
+      "show_timestamp": true,
+      "show_current_status": true
+    },
+    "status_badge": {
+      "statuses": [
+        "pending",
+        "processing",
+        "shipped",
+        "out_for_delivery",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "toast": {
+      "position": "top",
+      "duration": 3000,
+      "variants": [
+        "success",
+        "error",
+        "warning",
+        "info"
+      ]
+    }
+  },
+  "navigation": {
+    "type": "client_side",
+    "bottom_navigation": [
+      {
+        "id": "home",
+        "path": "/",
+        "label": "Home"
+      },
+      {
+        "id": "products",
+        "path": "/products",
+        "label": "Products"
+      },
+      {
+        "id": "livechat",
+        "path": "/livechat",
+        "label": "Live Chat"
+      },
+      {
+        "id": "profile",
+        "path": "/profile",
+        "label": "Profile"
+      }
+    ],
+    "standalone_pages": [
+      {
+        "id": "notifications",
+        "path": "/notifications"
+      },
+      {
+        "id": "cart",
+        "path": "/cart"
+      },
+      {
+        "id": "livechat",
+        "path": "/livechat"
+      }
+    ],
+    "commerce_pages": [
+      {
+        "id": "product_detail",
+        "path": "/product/:id"
+      },
+      {
+        "id": "checkout",
+        "path": "/checkout"
+      },
+      {
+        "id": "order_success",
+        "path": "/order-success"
+      },
+      {
+        "id": "orders",
+        "path": "/orders"
+      },
+      {
+        "id": "order_detail",
+        "path": "/orders/:id"
+      }
+    ],
+    "profile_pages": [
+      {
+        "id": "profile",
+        "path": "/profile"
+      },
+      {
+        "id": "account",
+        "path": "/profile/account"
+      },
+      {
+        "id": "addresses",
+        "path": "/profile/addresses"
+      },
+      {
+        "id": "payment_methods",
+        "path": "/profile/payment-methods"
+      }
+    ]
+  },
+  "commerce": {
+    "currency": "MYR",
+    "currency_symbol": "RM",
+    "price_decimals": 2,
+    "price_format": "RM 0.00",
+    "catalog": {
+      "brand": "Apple",
+      "third_party_products": false
+    },
+    "cart": {
+      "storage_key": "apple_store_cart",
+      "persist_to_local_storage": true,
+      "quantity_minimum": 1,
+      "quantity_maximum": "product_stock",
+      "prevent_quantity_above_stock": true,
+      "remove_item_when_quantity_zero": false,
+      "validate_storage_data": true,
+      "sync_header_cart_count": true
+    },
+    "checkout": {
+      "storage_key": "apple_store_checkout",
+      "shipping_fee": {
+        "type": "fixed",
+        "amount": 52,
+        "currency": "MYR"
+      },
+      "payment_method": {
+        "status": "undecided",
+        "methods": []
+      },
+      "shipping_method": "manual",
+      "require_shipping_address": true,
+      "require_valid_cart": true,
+      "prevent_checkout_with_empty_cart": true
+    },
+    "orders": {
+      "storage_key": "apple_store_orders",
+      "persist_to_local_storage": true,
+      "generate_order_id": true,
+      "save_order_on_success": true,
+      "clear_purchased_cart_items": true,
+      "statuses": [
+        "pending",
+        "processing",
+        "shipped",
+        "out_for_delivery",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "order_calculation": {
+      "subtotal": "sum(selected_item.price * selected_item.quantity)",
+      "shipping_fee": 52,
+      "discount": 0,
+      "total": "subtotal + shipping_fee - discount",
+      "currency": "MYR"
+    }
+  },
+  "pages": {
+    "home": {
+      "sections": [
+        "hero_banner",
+        "featured_categories",
+        "featured_products",
+        "new_arrivals",
+        "promotions"
+      ]
+    },
+    "products": {
+      "features": [
+        "category_filter",
+        "search",
+        "sorting",
+        "product_grid",
+        "add_to_cart"
+      ]
+    },
+    "product_detail": {
+      "sections": [
+        "image_gallery",
+        "product_name",
+        "price",
+        "description",
+        "specifications",
+        "variants",
+        "stock",
+        "quantity_selector"
+      ],
+      "bottom_action": [
+        "add_to_cart",
+        "buy_now"
+      ]
+    },
+    "cart": {
+      "sections": [
+        "cart_items",
+        "select_all",
+        "cart_summary"
+      ],
+      "bottom_action": [
+        "checkout"
+      ]
+    },
+    "checkout": {
+      "sections": [
+        "shipping_address",
+        "order_items",
+        "delivery_fee",
+        "payment_method",
+        "price_summary"
+      ],
+      "bottom_action": [
+        "place_order"
+      ]
+    },
+    "order_success": {
+      "sections": [
+        "success_message",
+        "order_number",
+        "order_summary"
+      ]
+    },
+    "orders": {
+      "sections": [
+        "order_filter_tabs",
+        "order_list",
+        "empty_state"
+      ]
+    },
+    "order_detail": {
+      "sections": [
+        "order_status",
+        "tracking_timeline",
+        "order_information",
+        "shipping_address",
+        "items",
+        "payment_summary"
+      ]
+    },
+    "profile": {
+      "sections": [
+        "user_information",
+        "account_menu",
+        "order_shortcut",
+        "settings"
+      ]
+    },
+    "notifications": {
+      "sections": [
+        "notification_list",
+        "empty_state"
+      ]
+    },
+    "livechat": {
+      "sections": [
+        "chat_header",
+        "message_list",
+        "message_input"
+      ]
+    }
+  },
+  "accessibility": {
+    "minimum_touch_target": 44,
+    "semantic_html": true,
+    "keyboard_accessibility": true,
+    "visible_focus": true,
+    "aria_labels": true,
+    "image_alt_text": true,
+    "color_contrast": "WCAG AA",
+    "respect_reduced_motion": true
+  },
+  "responsive": {
+    "strategy": "mobile-first",
+    "mobile_only": true,
+    "max_app_width": 500,
+    "desktop_behavior": "centered_mobile_app_container",
+    "horizontal_overflow": false,
+    "vertical_scrolling": "main_content_only"
+  },
+  "data_persistence": {
+    "storage": "localStorage",
+    "keys": [
+      "apple_store_cart",
+      "apple_store_checkout",
+      "apple_store_orders",
+      "apple_store_profile",
+      "apple_store_theme"
+    ],
+    "requirements": [
+      "Validate parsed JSON before use",
+      "Handle missing storage values",
+      "Handle malformed JSON safely",
+      "Persist cart changes",
+      "Persist orders after successful checkout",
+      "Keep cart count synchronized",
+      "Never exceed available product stock"
+    ]
+  },
+  "global_rules": [
+    "Build a mobile-only React Web storefront",
+    "Use Apple products as the only product catalog",
+    "Follow this design system as the single source of truth",
+    "Use consistent spacing, typography, colors, and component sizes",
+    "Support Light and Dark themes",
+    "Use MYR currency formatting with RM symbol",
+    "Use RM 52.00 as the fixed checkout shipping fee",
+    "Do not invent or activate payment methods while payment is undecided",
+    "Persist cart and orders using localStorage",
+    "Synchronize the header cart count with the actual cart state",
+    "Limit product quantity based on available stock",
+    "Keep the application root at 100% height with flex column layout",
+    "Keep main content flex 1, min-height 0, and independently scrollable",
+    "Keep header and bottom navigation outside the main scrolling area",
+    "Respect device safe areas",
+    "Prevent horizontal overflow",
+    "Use reusable components and consistent page layouts",
+    "Provide loading, empty, error, and success states",
+    "Do not use desktop layouts or desktop navigation",
+    "Do not use nested interactive buttons",
+    "Do not change finalized business requirements without approval"
+  ],
+  "api_examples": {
+    "products": {
+      "description": "Example products API response for the Apple product catalog.",
+      "method": "GET",
+      "endpoint": "/products",
+      "response": {
+        "success": true,
+        "message": "Products retrieved successfully",
+        "data": {
+          "products": [
+            {
+              "title": "Apple iPhone 18 Pro",
+              "description": "Apple iPhone 18 Pro ialah telefon pintar dalam rangkaian iPhone Pro. Varian contoh ini disenaraikan dalam warna Black dengan storan 256GB.",
+              "brand": "Apple",
+              "gtin": null,
+              "mpn": null,
+              "item_group_id": "APPLE-IPHONE-18-PRO",
+              "availability": "in stock",
+              "condition": "new",
+              "quantity_to_sell_on_facebook": 50,
+              "expiration_date": null,
+              "link": null,
+              "google_product_category": null,
+              "product_type": "Apple iPhone",
+              "created_at": "2026-11-20T20:51:36.127737+00:00",
+              "updated_at": "2026-11-21T07:36:40.373474+00:00",
+              "rich_text_description": "<p><strong>Apple iPhone 18 Pro</strong>.</p><p><strong>Color:</strong> Black</p><p><strong>Storage / Connectivity:</strong> 256GB</p>",
+              "variants": [
+                {
+                  "id": "67fcb52d-ea01-4b91-9eab-21d467c82b3e",
+                  "size": "256GB",
+                  "color": "Black",
+                  "price": 5499,
+                  "image_link": null,
+                  "sale_price": null,
+                  "additional_image_link": [
+                    "https://example.com/images/apple-iphone-18-pro-back.jpg",
+                    "https://example.com/images/apple-iphone-18-pro-detail.jpg"
+                  ]
+                }
+              ],
+              "custom_label_0": "Apple",
+              "sale_price_effective_date": null
+            },
+            {
+              "item_group_id": "APPLE-IPHONE-18-PRO-MAX",
+              "title": "Apple iPhone 18 Pro Max",
+              "description": null,
+              "brand": "Apple",
+              "gtin": null,
+              "mpn": null,
+              "availability": "in stock",
+              "condition": "new",
+              "quantity_to_sell_on_facebook": 50,
+              "expiration_date": null,
+              "link": "https://www.apple.com/my/shop/buy-iphone/iphone-18-pro",
+              "google_product_category": "Electronics > Communications > Telephony > Mobile Phones",
+              "product_type": "Apple iPhone",
+              "created_at": "2026-11-21T09:55:58.461011+00:00",
+              "updated_at": "2026-11-21T10:25:46.95+00:00",
+              "rich_text_description": null,
+              "variants": [
+                {
+                  "id": "5bb40d3f-ba11-493e-a2ea-668113723c9b",
+                  "size": "256GB",
+                  "color": "Black",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "f1b702ae-7209-485a-a780-6aed04470cb9",
+                  "size": "512GB",
+                  "color": "Black",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "d3ec0d14-2883-4ce5-94a8-a6c5f50fde17",
+                  "size": "1TB",
+                  "color": "Black",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "47bf6f71-8c5b-4bd6-b3e5-5bb853f578c5",
+                  "size": "2TB",
+                  "color": "Black",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ab95820-7f10-45c2-9144-f341e06c9134.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "765602a5-356b-4dac-b85a-1acb1e89f7ac",
+                  "size": "256GB",
+                  "color": "Silver",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "8cc9b021-77de-455f-9bcf-6b7afd62c58e",
+                  "size": "512GB",
+                  "color": "Silver",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "5f8d3cf4-092f-4cd2-8da3-2e90c2f0f911",
+                  "size": "1TB",
+                  "color": "Silver",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "46b6e5c0-0f6a-46e8-ac7d-f71246137da1",
+                  "size": "2TB",
+                  "color": "Silver",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/37d6b571-ab98-44bf-8544-712087acce2f.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "8308ff1f-6722-48fe-baf9-04d51be4ce8b",
+                  "size": "256GB",
+                  "color": "Glacier",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "635b5139-b7a5-4d9f-bfba-3ed0455afc07",
+                  "size": "512GB",
+                  "color": "Glacier",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "d486fbdd-d4b4-4cc4-899c-d670a1b4b736",
+                  "size": "1TB",
+                  "color": "Glacier",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "2109f471-dd10-44a3-b949-f398b62b944d",
+                  "size": "2TB",
+                  "color": "Glacier",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/2d22c23f-04c3-44fc-9548-c4423287ac0c.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "87304ab2-23da-486e-a5a0-7d728bb6299a",
+                  "size": "256GB",
+                  "color": "Burgundy",
+                  "price": 5999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "6d8adc71-c192-4a95-b40a-9db1a412a29d",
+                  "size": "512GB",
+                  "color": "Burgundy",
+                  "price": 6999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "0f88d574-7dbd-4bdd-aa6f-945fa54d55a2",
+                  "size": "1TB",
+                  "color": "Burgundy",
+                  "price": 8999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                },
+                {
+                  "id": "fd968a8e-f89b-42ae-b649-1dd72bca56b3",
+                  "size": "2TB",
+                  "color": "Burgundy",
+                  "price": 11999,
+                  "image_link": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/products/APPLE-IPHONE-18-PRO-MAX/1ae164e4-e096-4730-ac47-eaca207bc3d8.jpg",
+                  "sale_price": null,
+                  "additional_image_link": null
+                }
+              ],
+              "custom_label_0": "Apple",
+              "sale_price_effective_date": null
+            }
+          ]
+        },
+        "pagination": {
+          "page": 1,
+          "limit": 20,
+          "total": 2,
+          "total_pages": 1,
+          "has_next_page": false,
+          "has_previous_page": false
+        }
+      }
+    }
+  },
   "app": {
     "name": "Apple The Exchange TRX",
     "type": "mobile_storefront",
     "platform": "mobile-only",
     "framework": "react-web",
-    "design_system": "design_system.json"
+    "design_system": "embedded_in_App.json"
   },
   "AppShell": {
     "description": "Primary application shell for the main navigation experience.",
