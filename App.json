@@ -1103,7 +1103,11 @@
     "type": "mobile_storefront",
     "platform": "mobile-only",
     "framework": "react-web",
-    "design_system": "embedded_in_App.json"
+    "design_system": "embedded_in_App.json",
+    "logo": {
+      "src": "https://axednjikcambzbkxyqpp.supabase.co/storage/v1/object/public/images/logo.png",
+      "alt": "Apple The Exchange TRX"
+    }
   },
   "AppShell": {
     "description": "Primary application shell for the main navigation experience.",
