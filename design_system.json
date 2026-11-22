@@ -868,5 +868,62 @@
     "Do not use desktop layouts or desktop navigation",
     "Do not use nested interactive buttons",
     "Do not change finalized business requirements without approval"
-  ]
+  ],
+  "api_examples": {
+    "products": {
+      "description": "Example products API response for the Apple product catalog.",
+      "method": "GET",
+      "endpoint": "/products",
+      "response": {
+        "success": true,
+        "message": "Products retrieved successfully",
+        "data": {
+          "products": [
+            {
+              "title": "Apple iPhone 18 Pro",
+              "description": "Apple iPhone 18 Pro ialah telefon pintar dalam rangkaian iPhone Pro. Varian contoh ini disenaraikan dalam warna Black dengan storan 256GB.",
+              "brand": "Apple",
+              "gtin": null,
+              "mpn": null,
+              "item_group_id": "APPLE-IPHONE-18-PRO",
+              "availability": "in stock",
+              "condition": "new",
+              "quantity_to_sell_on_facebook": 50,
+              "expiration_date": null,
+              "link": null,
+              "google_product_category": null,
+              "product_type": "Apple iPhone",
+              "created_at": "2026-11-20T20:51:36.127737+00:00",
+              "updated_at": "2026-11-21T07:36:40.373474+00:00",
+              "rich_text_description": "<p><strong>Apple iPhone 18 Pro</strong>.</p><p><strong>Color:</strong> Black</p><p><strong>Storage / Connectivity:</strong> 256GB</p>",
+              "variants": [
+                {
+                  "id": "67fcb52d-ea01-4b91-9eab-21d467c82b3e",
+                  "size": "256GB",
+                  "color": "Black",
+                  "price": 5499,
+                  "image_link": null,
+                  "sale_price": null,
+                  "additional_image_link": [
+                    "https://example.com/images/apple-iphone-18-pro-back.jpg",
+                    "https://example.com/images/apple-iphone-18-pro-detail.jpg"
+                  ]
+                }
+              ],
+              "custom_label_0": "Apple",
+              "sale_price_effective_date": null
+            }
+          ]
+        },
+        "pagination": {
+          "page": 1,
+          "limit": 20,
+          "total": 1,
+          "total_pages": 1,
+          "has_next_page": false,
+          "has_previous_page": false
+        }
+      }
+    }
+  }
 }
