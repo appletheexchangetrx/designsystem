@@ -718,9 +718,22 @@
         "hero_banner",
         "featured_categories",
         "featured_products",
+        "flash_sale",
         "new_arrivals",
         "promotions"
-      ]
+      ],
+      "flash_sale": {
+        "enabled": true,
+        "data_source": "flash_sale_products",
+        "display": "horizontal_scroll",
+        "features": [
+          "countdown_timer",
+          "sale_price",
+          "original_price",
+          "discount_badge",
+          "stock_progress"
+        ]
+      }
     },
     "products": {
       "features": [
@@ -1178,6 +1191,29 @@
                 "children": [
                   "SectionHeader",
                   "ProductGrid"
+                ]
+              },
+              {
+                "component": "FlashSale",
+                "enabled": true,
+                "title": "Flash Sale",
+                "description": "Limited-time deals on selected Apple products.",
+                "data_source": "flash_sale_products",
+                "item_component": "ProductCard",
+                "display": "horizontal_scroll",
+                "children": [
+                  "SectionHeader",
+                  "CountdownTimer",
+                  "ProductHorizontalList",
+                  "ViewAllButton"
+                ],
+                "item_fields": [
+                  "ProductImage",
+                  "ProductName",
+                  "SalePrice",
+                  "OriginalPrice",
+                  "DiscountBadge",
+                  "StockProgress"
                 ]
               },
               {
