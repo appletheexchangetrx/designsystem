@@ -1,9 +1,8 @@
-
 {
   "meta": {
     "name": "Apple The Exchange TRX",
     "system": "Apple Storefront Mobile Design System",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "status": "final",
     "platform": "mobile-only",
     "framework": "react-web",
@@ -400,7 +399,35 @@
       "show_discount": true,
       "show_stock": false,
       "show_add_to_cart": true,
-      "radius": 16
+      "radius": 16,
+      "layout": "vertical",
+      "card_padding": 0,
+      "overflow": "hidden",
+      "image_container": {
+        "width": "100%",
+        "aspect_ratio": "1:1",
+        "padding": 0,
+        "margin": 0,
+        "overflow": "hidden",
+        "background": "surface_secondary",
+        "border_radius": "inherit"
+      },
+      "image": {
+        "width": "100%",
+        "height": "100%",
+        "display": "block",
+        "object_fit": "contain",
+        "object_position": "center",
+        "padding": 0,
+        "margin": 0
+      },
+      "content": {
+        "padding": 12,
+        "gap": 8
+      },
+      "image_to_content_spacing": 0,
+      "badge_position": "image_overlay",
+      "wishlist_position": "image_overlay"
     },
     "modal": {
       "position": "center",
@@ -454,7 +481,7 @@
       ],
       "shipping_fee": {
         "type": "fixed",
-        "amount": 52.00,
+        "amount": 52,
         "currency": "MYR",
         "display": "RM 52.00",
         "editable_by_customer": false
@@ -640,7 +667,7 @@
       "storage_key": "apple_store_checkout",
       "shipping_fee": {
         "type": "fixed",
-        "amount": 52.00,
+        "amount": 52,
         "currency": "MYR"
       },
       "payment_method": {
@@ -669,7 +696,7 @@
     },
     "order_calculation": {
       "subtotal": "sum(selected_item.price * selected_item.quantity)",
-      "shipping_fee": 52.00,
+      "shipping_fee": 52,
       "discount": 0,
       "total": "subtotal + shipping_fee - discount",
       "currency": "MYR"
