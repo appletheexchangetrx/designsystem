@@ -291,611 +291,806 @@
         "page": "NotificationsPage",
         "path": "/notifications",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "PageHeader",
-            "children": [
-              "BackButton",
-              "PageTitle",
-              "MarkAllAsReadButton"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "PageHeader",
+              "children": [
+                "BackButton",
+                "PageTitle",
+                "MarkAllAsReadButton"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "NotificationFilter",
+              "tabs": [
+                "All",
+                "Unread"
+              ],
+              "children": [
+                "FilterTab"
+              ]
+            },
+            {
+              "component": "NotificationList",
+              "item_fields": [
+                "Icon",
+                "Title",
+                "Message",
+                "Timestamp",
+                "UnreadIndicator",
+                "ActionLink"
+              ],
+              "children": [
+                "NotificationItem"
+              ]
+            },
+            {
+              "component": "EmptyState",
+              "children": [
+                "EmptyIcon",
+                "Title",
+                "Description"
+              ]
+            },
+            {
+              "component": "LoadingState",
+              "children": [
+                "SkeletonNotificationItem"
+              ]
+            },
+            {
+              "component": "ErrorState",
+              "children": [
+                "ErrorMessage",
+                "RetryButton"
+              ]
+            }
+          ],
+          "BottomAction": []
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "NotificationFilter",
-            "tabs": [
-              "All",
-              "Unread"
-            ],
-            "children": [
-              "FilterTab"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "NotificationList",
-            "item_fields": [
-              "Icon",
-              "Title",
-              "Message",
-              "Timestamp",
-              "UnreadIndicator",
-              "ActionLink"
-            ],
-            "children": [
-              "NotificationItem"
-            ]
-          },
-          {
-            "component": "EmptyState",
-            "children": [
-              "EmptyIcon",
-              "Title",
-              "Description"
-            ]
-          },
-          {
-            "component": "LoadingState",
-            "children": [
-              "SkeletonNotificationItem"
-            ]
-          },
-          {
-            "component": "ErrorState",
-            "children": [
-              "ErrorMessage",
-              "RetryButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "cart",
         "page": "CartPage",
         "path": "/cart",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "PageHeader",
-            "children": [
-              "BackButton",
-              "PageTitle",
-              "CartItemCount"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "PageHeader",
+              "children": [
+                "BackButton",
+                "PageTitle",
+                "CartItemCount"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "CartSelectionBar",
+              "children": [
+                "SelectAllCheckbox",
+                "RemoveSelectedButton"
+              ]
+            },
+            {
+              "component": "CartItemList",
+              "item_fields": [
+                "SelectionCheckbox",
+                "ProductImage",
+                "ProductName",
+                "VariantSummary",
+                "UnitPrice",
+                "QuantityStepper",
+                "RemoveButton",
+                "ItemSubtotal"
+              ],
+              "children": [
+                "CartItem"
+              ]
+            },
+            {
+              "component": "CartSummary",
+              "children": [
+                "SubtotalRow",
+                "DiscountRow",
+                "TotalRow"
+              ]
+            },
+            {
+              "component": "EmptyCartState",
+              "children": [
+                "CartIcon",
+                "Title",
+                "Description",
+                "ContinueShoppingButton"
+              ]
+            }
+          ],
+          "BottomAction": [
+            {
+              "component": "BottomAction",
+              "position": "static_in_page_flow",
+              "children": [
+                "CheckoutButton"
+              ]
+            }
+          ]
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "CartSelectionBar",
-            "children": [
-              "SelectAllCheckbox",
-              "RemoveSelectedButton"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "CartItemList",
-            "item_fields": [
-              "SelectionCheckbox",
-              "ProductImage",
-              "ProductName",
-              "VariantSummary",
-              "UnitPrice",
-              "QuantityStepper",
-              "RemoveButton",
-              "ItemSubtotal"
-            ],
-            "children": [
-              "CartItem"
-            ]
-          },
-          {
-            "component": "CartSummary",
-            "children": [
-              "SubtotalRow",
-              "DiscountRow",
-              "TotalRow"
-            ]
-          },
-          {
-            "component": "EmptyCartState",
-            "children": [
-              "CartIcon",
-              "Title",
-              "Description",
-              "ContinueShoppingButton"
-            ]
-          },
-          {
-            "component": "BottomAction",
-            "position": "static_in_page_flow",
-            "children": [
-              "CheckoutButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "livechat",
         "page": "LiveChatPage",
         "path": "/livechat",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "ChatHeader",
-            "children": [
-              "BackButton",
-              "SupportAvatar",
-              "SupportName",
-              "OnlineStatus",
-              "MoreActionsButton"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "ChatHeader",
+              "children": [
+                "BackButton",
+                "SupportAvatar",
+                "SupportName",
+                "OnlineStatus",
+                "MoreActionsButton"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "ConversationInfo",
+              "children": [
+                "DateDivider",
+                "WelcomeMessage"
+              ]
+            },
+            {
+              "component": "MessageList",
+              "children": [
+                "MessageBubble",
+                "MessageTimestamp",
+                "MessageStatus",
+                "TypingIndicator"
+              ]
+            },
+            {
+              "component": "ChatEmptyState",
+              "children": [
+                "SupportIcon",
+                "Title",
+                "Description"
+              ]
+            },
+            {
+              "component": "ChatErrorState",
+              "children": [
+                "ErrorMessage",
+                "RetryButton"
+              ]
+            }
+          ],
+          "BottomAction": [
+            {
+              "component": "ChatComposer",
+              "children": [
+                "AttachmentButton",
+                "MessageInput",
+                "EmojiButton",
+                "SendButton"
+              ]
+            }
+          ]
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "ConversationInfo",
-            "children": [
-              "DateDivider",
-              "WelcomeMessage"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "MessageList",
-            "children": [
-              "MessageBubble",
-              "MessageTimestamp",
-              "MessageStatus",
-              "TypingIndicator"
-            ]
-          },
-          {
-            "component": "ChatComposer",
-            "children": [
-              "AttachmentButton",
-              "MessageInput",
-              "EmojiButton",
-              "SendButton"
-            ]
-          },
-          {
-            "component": "ChatEmptyState",
-            "children": [
-              "SupportIcon",
-              "Title",
-              "Description"
-            ]
-          },
-          {
-            "component": "ChatErrorState",
-            "children": [
-              "ErrorMessage",
-              "RetryButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "product_detail",
         "page": "ProductDetailPage",
         "path": "/product/:id",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "ProductImageGallery",
-            "children": [
-              "MainProductImage",
-              "ThumbnailList",
-              "ImagePagination"
-            ]
+        "components": {
+          "Header": [],
+          "Content": [
+            {
+              "component": "ProductImageGallery",
+              "children": [
+                "MainProductImage",
+                "ThumbnailList",
+                "ImagePagination"
+              ]
+            },
+            {
+              "component": "ProductHeading",
+              "children": [
+                "ProductName",
+                "BrandLabel",
+                "NewBadge",
+                "WishlistButton"
+              ]
+            },
+            {
+              "component": "ProductPricing",
+              "children": [
+                "CurrentPrice",
+                "OriginalPrice",
+                "DiscountBadge",
+                "InstallmentOrPriceNote"
+              ]
+            },
+            {
+              "component": "ProductAvailability",
+              "children": [
+                "AvailabilityBadge",
+                "StockMessage"
+              ]
+            },
+            {
+              "component": "ProductVariantSelector",
+              "children": [
+                "ColorSelector",
+                "StorageSelector",
+                "VariantPrice"
+              ]
+            },
+            {
+              "component": "ProductQuantitySelector",
+              "children": [
+                "DecreaseButton",
+                "QuantityValue",
+                "IncreaseButton"
+              ]
+            },
+            {
+              "component": "ProductDescription",
+              "children": [
+                "SectionHeader",
+                "DescriptionText",
+                "RichTextDescription"
+              ]
+            },
+            {
+              "component": "ProductSpecifications",
+              "children": [
+                "SectionHeader",
+                "SpecificationList"
+              ]
+            },
+            {
+              "component": "ProductInformationAccordion",
+              "children": [
+                "DeliveryInformation",
+                "ReturnsInformation",
+                "WarrantyInformation"
+              ]
+            },
+            {
+              "component": "RelatedProducts",
+              "item_component": "ProductCard",
+              "children": [
+                "SectionHeader",
+                "ProductHorizontalList"
+              ]
+            }
+          ],
+          "BottomAction": [
+            {
+              "component": "BottomAction",
+              "position": "static_in_page_flow",
+              "children": [
+                "AddToCartButton",
+                "BuyNowButton"
+              ]
+            }
+          ]
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "ProductHeading",
-            "children": [
-              "ProductName",
-              "BrandLabel",
-              "NewBadge",
-              "WishlistButton"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "ProductPricing",
-            "children": [
-              "CurrentPrice",
-              "OriginalPrice",
-              "DiscountBadge",
-              "InstallmentOrPriceNote"
-            ]
-          },
-          {
-            "component": "ProductAvailability",
-            "children": [
-              "AvailabilityBadge",
-              "StockMessage"
-            ]
-          },
-          {
-            "component": "ProductVariantSelector",
-            "children": [
-              "ColorSelector",
-              "StorageSelector",
-              "VariantPrice"
-            ]
-          },
-          {
-            "component": "ProductQuantitySelector",
-            "children": [
-              "DecreaseButton",
-              "QuantityValue",
-              "IncreaseButton"
-            ]
-          },
-          {
-            "component": "ProductDescription",
-            "children": [
-              "SectionHeader",
-              "DescriptionText",
-              "RichTextDescription"
-            ]
-          },
-          {
-            "component": "ProductSpecifications",
-            "children": [
-              "SectionHeader",
-              "SpecificationList"
-            ]
-          },
-          {
-            "component": "ProductInformationAccordion",
-            "children": [
-              "DeliveryInformation",
-              "ReturnsInformation",
-              "WarrantyInformation"
-            ]
-          },
-          {
-            "component": "RelatedProducts",
-            "item_component": "ProductCard",
-            "children": [
-              "SectionHeader",
-              "ProductHorizontalList"
-            ]
-          },
-          {
-            "component": "BottomAction",
-            "position": "static_in_page_flow",
-            "children": [
-              "AddToCartButton",
-              "BuyNowButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "checkout",
         "page": "CheckoutPage",
         "path": "/checkout",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "PageHeader",
-            "children": [
-              "BackButton",
-              "PageTitle",
-              "SecureCheckoutIndicator"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "PageHeader",
+              "children": [
+                "BackButton",
+                "PageTitle",
+                "SecureCheckoutIndicator"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "ShippingAddressSection",
+              "children": [
+                "SectionHeader",
+                "SelectedAddressCard",
+                "ChangeAddressButton",
+                "AddAddressButton"
+              ]
+            },
+            {
+              "component": "OrderItemsSection",
+              "item_fields": [
+                "ProductImage",
+                "ProductName",
+                "VariantSummary",
+                "Quantity",
+                "Price"
+              ],
+              "children": [
+                "SectionHeader",
+                "CheckoutItem"
+              ]
+            },
+            {
+              "component": "DeliverySection",
+              "fixed_shipping_fee": "RM 52.00",
+              "children": [
+                "DeliveryMethod",
+                "DeliveryFee"
+              ]
+            },
+            {
+              "component": "PaymentMethodSection",
+              "status": "undecided",
+              "methods": [],
+              "children": [
+                "SectionHeader",
+                "PaymentMethodPlaceholder",
+                "ChoosePaymentMethodButton"
+              ]
+            },
+            {
+              "component": "PriceSummary",
+              "children": [
+                "SubtotalRow",
+                "ShippingFeeRow",
+                "DiscountRow",
+                "TotalRow"
+              ]
+            },
+            {
+              "component": "CheckoutValidation",
+              "children": [
+                "InlineErrorMessage"
+              ]
+            }
+          ],
+          "BottomAction": [
+            {
+              "component": "BottomAction",
+              "position": "static_in_page_flow",
+              "children": [
+                "PlaceOrderButton"
+              ]
+            }
+          ]
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "ShippingAddressSection",
-            "children": [
-              "SectionHeader",
-              "SelectedAddressCard",
-              "ChangeAddressButton",
-              "AddAddressButton"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "OrderItemsSection",
-            "item_fields": [
-              "ProductImage",
-              "ProductName",
-              "VariantSummary",
-              "Quantity",
-              "Price"
-            ],
-            "children": [
-              "SectionHeader",
-              "CheckoutItem"
-            ]
-          },
-          {
-            "component": "DeliverySection",
-            "fixed_shipping_fee": "RM 52.00",
-            "children": [
-              "DeliveryMethod",
-              "DeliveryFee"
-            ]
-          },
-          {
-            "component": "PaymentMethodSection",
-            "status": "undecided",
-            "methods": [],
-            "children": [
-              "SectionHeader",
-              "PaymentMethodPlaceholder",
-              "ChoosePaymentMethodButton"
-            ]
-          },
-          {
-            "component": "PriceSummary",
-            "children": [
-              "SubtotalRow",
-              "ShippingFeeRow",
-              "DiscountRow",
-              "TotalRow"
-            ]
-          },
-          {
-            "component": "CheckoutValidation",
-            "children": [
-              "InlineErrorMessage"
-            ]
-          },
-          {
-            "component": "BottomAction",
-            "position": "static_in_page_flow",
-            "children": [
-              "PlaceOrderButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "order_success",
         "page": "OrderSuccessPage",
         "path": "/order-success",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "SuccessHeader",
-            "children": [
-              "SuccessIcon",
-              "SuccessTitle",
-              "SuccessDescription"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "SuccessHeader",
+              "children": [
+                "SuccessIcon",
+                "SuccessTitle",
+                "SuccessDescription"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "OrderReference",
+              "children": [
+                "OrderNumber",
+                "CopyOrderNumberButton",
+                "OrderDate"
+              ]
+            },
+            {
+              "component": "OrderSummary",
+              "children": [
+                "OrderItemPreview",
+                "ItemsCount",
+                "TotalPaid"
+              ]
+            },
+            {
+              "component": "NextSteps",
+              "children": [
+                "DeliveryInformation",
+                "ConfirmationMessage"
+              ]
+            },
+            {
+              "component": "PrimaryActions",
+              "children": [
+                "ViewOrderButton",
+                "ContinueShoppingButton"
+              ]
+            }
+          ],
+          "BottomAction": []
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "OrderReference",
-            "children": [
-              "OrderNumber",
-              "CopyOrderNumberButton",
-              "OrderDate"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "OrderSummary",
-            "children": [
-              "OrderItemPreview",
-              "ItemsCount",
-              "TotalPaid"
-            ]
-          },
-          {
-            "component": "NextSteps",
-            "children": [
-              "DeliveryInformation",
-              "ConfirmationMessage"
-            ]
-          },
-          {
-            "component": "PrimaryActions",
-            "children": [
-              "ViewOrderButton",
-              "ContinueShoppingButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "orders",
         "page": "OrdersPage",
         "path": "/orders",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "PageHeader",
-            "children": [
-              "BackButton",
-              "PageTitle"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "PageHeader",
+              "children": [
+                "BackButton",
+                "PageTitle"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "OrderFilterTabs",
+              "tabs": [
+                "All",
+                "Pending",
+                "Processing",
+                "Shipped",
+                "Completed",
+                "Cancelled"
+              ],
+              "children": [
+                "FilterTab"
+              ]
+            },
+            {
+              "component": "OrderList",
+              "item_fields": [
+                "OrderNumber",
+                "OrderDate",
+                "OrderStatusBadge",
+                "ProductPreview",
+                "ItemCount",
+                "OrderTotal",
+                "ViewDetailsButton"
+              ],
+              "children": [
+                "OrderCard"
+              ]
+            },
+            {
+              "component": "EmptyState",
+              "children": [
+                "OrderIcon",
+                "Title",
+                "Description",
+                "StartShoppingButton"
+              ]
+            },
+            {
+              "component": "LoadingState",
+              "children": [
+                "SkeletonOrderCard"
+              ]
+            },
+            {
+              "component": "ErrorState",
+              "children": [
+                "ErrorMessage",
+                "RetryButton"
+              ]
+            }
+          ],
+          "BottomAction": []
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "OrderFilterTabs",
-            "tabs": [
-              "All",
-              "Pending",
-              "Processing",
-              "Shipped",
-              "Completed",
-              "Cancelled"
-            ],
-            "children": [
-              "FilterTab"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "OrderList",
-            "item_fields": [
-              "OrderNumber",
-              "OrderDate",
-              "OrderStatusBadge",
-              "ProductPreview",
-              "ItemCount",
-              "OrderTotal",
-              "ViewDetailsButton"
-            ],
-            "children": [
-              "OrderCard"
-            ]
-          },
-          {
-            "component": "EmptyState",
-            "children": [
-              "OrderIcon",
-              "Title",
-              "Description",
-              "StartShoppingButton"
-            ]
-          },
-          {
-            "component": "LoadingState",
-            "children": [
-              "SkeletonOrderCard"
-            ]
-          },
-          {
-            "component": "ErrorState",
-            "children": [
-              "ErrorMessage",
-              "RetryButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       },
       {
         "id": "order_detail",
         "page": "OrderDetailPage",
         "path": "/orders/:id",
         "layout": {
-          "scrollable": true,
-          "overflow_y": "auto",
-          "overflow_x": "hidden",
-          "padding_horizontal": 16,
-          "padding_top": 16,
-          "padding_bottom": 24
+          "direction": "column",
+          "height": "100%",
+          "min_height": 0,
+          "overflow": "hidden",
+          "display": "flex",
+          "width": "100%",
+          "max_width": "500px",
+          "margin": "0 auto"
         },
-        "components": [
-          {
-            "component": "PageHeader",
-            "children": [
-              "BackButton",
-              "PageTitle",
-              "MoreActionsButton"
-            ]
+        "components": {
+          "Header": [
+            {
+              "component": "PageHeader",
+              "children": [
+                "BackButton",
+                "PageTitle",
+                "MoreActionsButton"
+              ]
+            }
+          ],
+          "Content": [
+            {
+              "component": "OrderStatusSection",
+              "children": [
+                "OrderStatusBadge",
+                "StatusDescription",
+                "LastUpdated"
+              ]
+            },
+            {
+              "component": "OrderTrackingTimeline",
+              "steps": [
+                "OrderPlaced",
+                "Processing",
+                "Shipped",
+                "OutForDelivery",
+                "Delivered"
+              ],
+              "show_timestamp": true,
+              "children": [
+                "TrackingStep"
+              ]
+            },
+            {
+              "component": "OrderInformation",
+              "children": [
+                "OrderNumber",
+                "OrderDate",
+                "PaymentStatus",
+                "CopyOrderNumberButton"
+              ]
+            },
+            {
+              "component": "ShippingAddressSection",
+              "children": [
+                "RecipientName",
+                "PhoneNumber",
+                "FullAddress"
+              ]
+            },
+            {
+              "component": "OrderItemsSection",
+              "item_fields": [
+                "ProductImage",
+                "ProductName",
+                "VariantSummary",
+                "Quantity",
+                "UnitPrice",
+                "LineTotal"
+              ],
+              "children": [
+                "OrderItem"
+              ]
+            },
+            {
+              "component": "PaymentSummary",
+              "children": [
+                "SubtotalRow",
+                "ShippingFeeRow",
+                "DiscountRow",
+                "TotalRow"
+              ]
+            },
+            {
+              "component": "OrderActions",
+              "children": [
+                "ContactSupportButton",
+                "CancelOrderButton",
+                "BuyAgainButton"
+              ]
+            }
+          ],
+          "BottomAction": []
+        },
+        "regions": {
+          "Header": {
+            "position": "static",
+            "flex": "0 0 auto"
           },
-          {
-            "component": "OrderStatusSection",
-            "children": [
-              "OrderStatusBadge",
-              "StatusDescription",
-              "LastUpdated"
-            ]
+          "Content": {
+            "flex": 1,
+            "min_height": 0,
+            "scrollable": true,
+            "overflow_y": "auto",
+            "overflow_x": "hidden"
           },
-          {
-            "component": "OrderTrackingTimeline",
-            "steps": [
-              "OrderPlaced",
-              "Processing",
-              "Shipped",
-              "OutForDelivery",
-              "Delivered"
-            ],
-            "show_timestamp": true,
-            "children": [
-              "TrackingStep"
-            ]
-          },
-          {
-            "component": "OrderInformation",
-            "children": [
-              "OrderNumber",
-              "OrderDate",
-              "PaymentStatus",
-              "CopyOrderNumberButton"
-            ]
-          },
-          {
-            "component": "ShippingAddressSection",
-            "children": [
-              "RecipientName",
-              "PhoneNumber",
-              "FullAddress"
-            ]
-          },
-          {
-            "component": "OrderItemsSection",
-            "item_fields": [
-              "ProductImage",
-              "ProductName",
-              "VariantSummary",
-              "Quantity",
-              "UnitPrice",
-              "LineTotal"
-            ],
-            "children": [
-              "OrderItem"
-            ]
-          },
-          {
-            "component": "PaymentSummary",
-            "children": [
-              "SubtotalRow",
-              "ShippingFeeRow",
-              "DiscountRow",
-              "TotalRow"
-            ]
-          },
-          {
-            "component": "OrderActions",
-            "children": [
-              "ContactSupportButton",
-              "CancelOrderButton",
-              "BuyAgainButton"
-            ]
+          "BottomAction": {
+            "position": "static",
+            "flex": "0 0 auto"
           }
-        ]
+        }
       }
     ]
   },
