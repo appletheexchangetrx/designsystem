@@ -17,7 +17,7 @@
     "components": {
       "GlobalHeader": {
         "visible": true,
-        "position": "sticky",
+        "position": "static",
         "height": 56,
         "items": [
           "logo",
@@ -53,7 +53,7 @@
       },
       "BottomNavigation": {
         "visible": true,
-        "position": "sticky",
+        "position": "static",
         "height": 64,
         "items": [
           {
