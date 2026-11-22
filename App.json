@@ -1,0 +1,163 @@
+{
+  "app": {
+    "name": "Apple The Exchange TRX",
+    "type": "mobile_storefront",
+    "platform": "mobile-only",
+    "framework": "react-web",
+    "design_system": "design_system.json"
+  },
+  "AppShell": {
+    "description": "Primary application shell for the main navigation experience.",
+    "layout": {
+      "direction": "column",
+      "height": "100%",
+      "min_height": 0,
+      "overflow": "hidden"
+    },
+    "components": {
+      "GlobalHeader": {
+        "visible": true,
+        "position": "sticky",
+        "height": 56,
+        "items": [
+          "logo",
+          "notification",
+          "cart",
+          "profile"
+        ]
+      },
+      "MainContent": {
+        "visible": true,
+        "flex": 1,
+        "min_height": 0,
+        "scrollable": true,
+        "overflow_y": "auto",
+        "overflow_x": "hidden",
+        "screens": [
+          {
+            "id": "home",
+            "page": "HomePage",
+            "path": "/"
+          },
+          {
+            "id": "products",
+            "page": "ProductsPage",
+            "path": "/products"
+          },
+          {
+            "id": "profile",
+            "page": "ProfilePage",
+            "path": "/profile"
+          }
+        ]
+      },
+      "BottomNavigation": {
+        "visible": true,
+        "position": "sticky",
+        "height": 64,
+        "items": [
+          {
+            "id": "home",
+            "label": "Home",
+            "icon": "house",
+            "path": "/"
+          },
+          {
+            "id": "products",
+            "label": "Products",
+            "icon": "grid-2x2",
+            "path": "/products"
+          },
+          {
+            "id": "livechat",
+            "label": "Live Chat",
+            "icon": "message-circle",
+            "path": "/livechat"
+          },
+          {
+            "id": "profile",
+            "label": "Profile",
+            "icon": "user-round",
+            "path": "/profile"
+          }
+        ]
+      }
+    }
+  },
+  "StandalonePages": [
+    {
+      "id": "notifications",
+      "page": "NotificationsPage",
+      "path": "/notifications"
+    },
+    {
+      "id": "cart",
+      "page": "CartPage",
+      "path": "/cart"
+    },
+    {
+      "id": "livechat",
+      "page": "LiveChatPage",
+      "path": "/livechat"
+    },
+    {
+      "id": "product_detail",
+      "page": "ProductDetailPage",
+      "path": "/product/:id"
+    },
+    {
+      "id": "checkout",
+      "page": "CheckoutPage",
+      "path": "/checkout"
+    },
+    {
+      "id": "order_success",
+      "page": "OrderSuccessPage",
+      "path": "/order-success"
+    },
+    {
+      "id": "orders",
+      "page": "OrdersPage",
+      "path": "/orders"
+    },
+    {
+      "id": "order_detail",
+      "page": "OrderDetailPage",
+      "path": "/orders/:id"
+    }
+  ],
+  "Overlay": {
+    "description": "Global overlay layer rendered above the active application page.",
+    "components": {
+      "Modal": {
+        "enabled": true,
+        "position": "center",
+        "backdrop": true,
+        "close_on_backdrop": true,
+        "close_button": true,
+        "z_index": 70
+      },
+      "BottomSheet": {
+        "enabled": true,
+        "position": "bottom",
+        "border_radius": "20px 20px 0 0",
+        "backdrop": true,
+        "drag_handle": true,
+        "safe_area_bottom": true,
+        "z_index": 80
+      },
+      "Toast": {
+        "enabled": true,
+        "position": "top",
+        "duration": 3000,
+        "variants": [
+          "success",
+          "error",
+          "warning",
+          "info"
+        ],
+        "z_index": 90
+      }
+    }
+  }
+}
